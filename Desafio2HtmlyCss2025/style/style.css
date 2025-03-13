@@ -1,0 +1,378 @@
+body{
+    font-family: Century Gothic;
+    margin: 0;
+}
+/*navbar*/
+#navBar{
+    background-color: #5e42a6;
+    color: white;
+}
+/*fin navbar*/
+/*BODY SECTION CARDS*/
+#container{
+    color: white;
+}
+#imagen1{
+    background-color:  #fe7472;
+}
+#imagen2{
+    background-color:  #749ffe;
+}
+#imagen3{
+    background-color:  #5e42a6;
+}
+#imagen4{
+    background-color:  #ffb274;
+}
+/*FIN BODY SECTION CARDS*/
+
+/*BREAK POINTS*/
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 320px) {
+    #navBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2em;
+    }
+    #imagenNav{
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        padding: 15px;
+    }
+    #logoImagen{
+      height: 100px;
+    }
+    li{
+        list-style: none;
+        border-bottom: white solid 2px;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2em;
+        font-size: 1em;
+        font-weight: 600;
+        padding-bottom: 0.5em;
+    }
+    ul{
+        list-style-type: none;
+        padding-inline-start: 0;
+    }
+    #container{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        & div{
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        h1{
+            color: #5e42a6;
+            display: flex;
+        }
+        & img{
+            width: 100%;
+        }
+        & p{
+            text-align: center;
+            align-items: center;
+            margin: 8px;
+        }
+        .cardImage {
+            position: relative; /* Añadido para posicionar el hover correctamente */
+            overflow: hidden; /* Para que el contenido del hover no se salga */
+        .textHover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(125, 199, 221, 0.89); /* Fondo semitransparente */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0; /* Inicialmente invisible */
+            transition: opacity 0.3s ease; /* Transición suave para el hover */
+            z-index: 2;
+            padding: 5px; /* Añadido para mejor legibilidad */
+            box-sizing: border-box; /* Para incluir el padding en el ancho y alto */
+            }
+            /* &:hover .textHover {
+                opacity: 1; Visible al hacer hover
+            } */
+        }
+    }
+}
+@media (max-width: 503px) {
+    #navBar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2em;
+        }
+        #imagenNav{
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+            padding: 15px;
+        }
+        #logoImagen{
+          height: 100px;
+        }
+        li{
+            list-style: none;
+            border-bottom: white solid 2px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2em;
+            font-size: 1em;
+            font-weight: 600;
+            padding-bottom: 0.5em;
+        }
+        ul{
+            list-style-type: none;
+            padding-inline-start: 0;
+        }
+        #container{
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            & div{
+                width: 80%;
+                margin-bottom: 20px;
+            }
+            h1{
+                color: #5e42a6;
+                display: flex;
+            }
+            & img{
+                width: 100%;
+            }
+            & p{
+                text-align: center;
+                align-items: center;
+                margin: 8px;
+            }
+            .cardImage {
+                position: relative; /* Añadido para posicionar el hover correctamente */
+                overflow: hidden; /* Para que el contenido del hover no se salga */
+            .textHover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(125, 199, 221, 0.89); /* Fondo semitransparente */
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0; /* Inicialmente invisible */
+                transition: opacity 0.3s ease; /* Transición suave para el hover */
+                z-index: 2;
+                padding: 5px; /* Añadido para mejor legibilidad */
+                box-sizing: border-box; /* Para incluir el padding en el ancho y alto */
+                }
+                &:hover .textHover {
+                    opacity: 1; /* Visible al hacer hover */
+                }
+            }
+        }
+    }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 504px) {
+    #navBar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        justify-content: space-around;
+        align-items: center; /* Centrar verticalmente los elementos del navbar */
+    }
+
+    #logoImagen {
+        height: 40px;
+    }
+
+    ul {
+        display: flex;
+        background-color: transparent; /* Eliminar el fondo rojo */
+    }
+
+    li {
+        width: auto; /* Ajustar el ancho automáticamente */
+        border-bottom: 0;
+        margin-bottom: 0;
+        text-align: center;
+        padding: 0 10px; /* Añadir un poco de padding horizontal */
+    }
+    
+        #container{
+            width: 100%;
+        }
+        h1{
+            width: 80%;
+        }
+        #container{
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0;
+            & div{
+                width: 40%;
+                margin: 10px;
+                margin-bottom: 20px;
+            }
+            h1{
+                color: #5e42a6;
+                display: flex;
+            }
+            & img{
+                width: 100%;
+            }
+            & p{
+                text-align: center;
+                align-items: center;
+                margin: 8px;
+            }
+            .cardImage .textHover {
+                opacity: 0; /* Ocultar el hover en resoluciones mayores */
+            }
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 768px) { 
+    #container{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        & div{
+            width: 20%;
+            margin-bottom: 20px;
+        }
+        h1{
+            color: #5e42a6;
+            display: flex;
+            width: 88%;
+        }
+        & img{
+            width: 100%;
+        }
+        & p{
+            text-align: center;
+            align-items: center;
+            margin: 2px;
+            font-size: 12px;
+        }
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body{
+        display: flex;
+        flex-direction: row;
+    }
+    #navBar{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2em;
+        justify-content: flex-start;
+        }
+        #imagenNav{
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+            padding: 15px;
+        }
+        #logoImagen{
+          height: 100px;
+        }
+        li{
+            list-style: none;
+            border-bottom: white solid 2px;
+            width: 200px;
+            display: flex;
+            justify-content:flex-end;
+            text-align: end;
+            margin-bottom: 2em;
+            font-size: 1em;
+            font-weight: 600;
+            padding-bottom: 0.5em;
+        }
+        ul{
+            margin-top: 70px;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            padding-inline-start: 0;
+        }
+        #container{
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    #container{
+        width: 100%;
+    }
+    h1{
+        width: 80%;
+    }
+    #container{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+        & div{
+            width: 40%;
+            margin: 10px;
+            margin-bottom: 20px;
+        }
+        h1{
+            color: #5e42a6;
+            display: flex;
+        }
+        & img{
+            width: 100%;
+        }
+        & p{
+            text-align: center;
+            align-items: center;
+            margin: 8px;
+        }
+        .cardImage .textHover {
+            opacity: 0; /* Ocultar el hover en resoluciones mayores */
+        }
+}
+}
+
